@@ -1,0 +1,154 @@
+<html>
+<head>
+    <meta name="viewport" content="with=device-width", initial-scale="1.0"> 
+        <title> My Portfolio </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    </head>
+    <body>
+    <section class="header">
+        <nav>
+            <!-- <a href="index.html"><img src="images/logo.png"></a> -->
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">PROJECTS</a></li>
+                    <li><a href="">WORK</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+<div class="text-box">
+    <h1>Software Developer Student</h1>
+    <p>Currently Studying at Queen's University. Pursuing a Double Minor in Business and Entrepreneurship</p>
+    <a href="" class="hero-btn">Let's Get in Touch!</a>
+</div>
+
+</section>
+
+<!---- About Page ---->
+<section class="about">
+    <h1> A Bit About Me</h1>
+    <p> I am a Computer Science Student Currently Studying at Queen's University.</p>
+
+    <div class="row">
+        <div class="about-col">
+            <h3> My Passion </h3>
+            <p> I want to create mobile apps that improves every day activities.</p>
+        </div>
+
+        <div class="about-col">
+            <h3> My Goal </h3>
+            <p> I strive to create a company that inspires innovation and creativity among young software developers.</p>
+        </div>
+
+        <div class="about-col">
+            <h3> My Work </h3>
+            <p> I am currently working on the Perspective App.</p>
+        </div>
+    </div>
+
+</section>
+
+<!---- Projects Page ---->
+<section class="projects">
+    <h1> My Projects </h1>
+    <p> Follow my Work and Aspiring Projects</p>
+
+    <div class="row">
+        <div class="projects-col">
+            <img src="images/perspective.jpg">  <!-- Fix Images to Logos/Demos -->
+            <div class="layer1">
+                <h3> PERSPECTIVE</h3>
+            </div>
+        </div>
+
+        <div class="projects-col">
+            <img src="images/lockclock.jpg"> <!-- Fix Images to Logos/Demos -->
+            <div class="layer2">
+                <h3> FOCUS UP</h3>
+            </div>
+        </div>
+
+        <div class="projects-col">
+            <img src="images/web.png"> <!-- Fix Images to Logos/Demos -->
+            <div class="layer3">
+                <h3> THE 1% SOLUTION</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!---- Work Page ---->
+<section class="work">
+    <h1> My Work</h1>
+    <p> My Experience</p>
+
+    <div class="row">
+        
+        <div class="work-col">
+            <img src="images/Logo.png"> <!-- Add Images of Work Places-->
+            <h3> Sprout Labs</h3>
+            <p> Founder </p>
+            <span style="color: darkgrey"> Current </span>
+        </div>
+
+        <div class="work-col">
+            <img src="images/gm.png"> <!-- Add Images of Work Places-->
+            <h3> General Motors</h3>
+            <p> Kotlin Development Intern </p>
+            <span style="color: darkgrey"> May - September 2022</span>
+
+        </div>
+
+        <div class="work-col">
+            <img src="images/gm.png"> <!-- Add Images of Work Places-->
+            <h3> General Motors</h3>
+            <p> Android Development Intern </p>
+            <span style="color: darkgrey"> May - September 2021</span>
+        </div>
+    </div>
+</section>
+
+
+<!---- Call to Action ---->
+<section class="cta">
+    <h1> Have an App Idea? </h1>
+    <a href="" class="hero-btn"> LET'S CONNECT </a>
+</section>
+
+
+<!---- Footer ---->
+<section class="footer">
+    <h4> CONTACT </h4>  
+    <div class="icons">
+        <img src="images/linkedin.png">
+        <img src="images/github.png">
+        <img src="images/email.png">
+    </div>
+    <p> Ethan Mah @ SproutLabs  2023</p>
+</section>
+
+<!---- Toggle Menu Script ---->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
