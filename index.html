@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title> Ethan Mah Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2df948205b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">PROJECTS</a></li>
+                    <li><a href="#portfolio">WORK</a></li>
+                    <li><a href="#cta">CONTACT</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1> Hi, I'm <span>Ethan Mah</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!----- ABOUT PAGE ----->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> testing testing 123</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Projects</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Perspective</span><br>A Shared Memory Logging App that Let's You Relive the Moment</li>
+                            <li><span>Focus Up</span><br>A Screen Time Productivity App Built Around Community</li>
+                            <li><span>The 1%</span><br>A Habit Tracker to Improve Every Day Routines</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Current 2023</span><br>CEO of Sprout Labs</li>
+                            <li><span>May - September 2022</span><br>Kotlin Developer Intern at General Motors</li>
+                            <li><span>May - September 2021</span><br>Android Developer Intern at General Motors</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Queen's University</span><br>Bachelor's of Computer Science • 2020 - 2024</li>
+                            <li><span>Dunnin-Deshpande Queen's Innovation</span><br>Certificate in Entrepreneurship and Innovation • 2021 - 2023</li>
+                            <li><span>Smith's School of Business</span><br>Certificate in Business • 2022 - 2024</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----- PROJECTS ----->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>  <!-- Change Projects Feature -->
+                    <h2>Web Development</h2>
+                    <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Full Stack Development</h2>
+                    <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Native Development</h2>
+                    <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----- Portfolio ----->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Focus Up.png">
+                    <div class="layer" id="focus">
+                        <h3>Focus Up: A Screen Time Productivity App</h3>
+                        <p>This app tracks users' SCREEN TIME and logs usage rates with Friends</p>
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/The 1%.png">
+                    <div class="layer" id="one">
+                        <h3>The 1%: A Habit Tracker and Routine Improvement App</h3>
+                        <p>This app follows the Atomic Habits' daily GROWTH routine to track daily steps toward your GOALS</p>
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/Perspective.png">
+                    <div class="layer" id="perspective">
+                        <h3>Perspective: A Community Memory Logging App</h3>
+                        <p>This app connects users' perspectives to allow you to Relive Events through the PERSPECTIVE of others</p>
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn"> See More </a>
+        </div>
+    </div>
+
+
+    <!---- Call to Action ---->
+    <section class="cta" id="cta">
+        <h1> Have an App Idea? </h1>
+        <a href="" class="btn"> LET'S CONNECT </a>
+    </section>
+
+    <!---- Footer ---->
+    <section class="footer">
+        <h2> CONTACT </h2> 
+        <div class="contact">
+
+            <p><a href="mailto: ett.mah@gmail.com"><i class="fa-solid fa-envelope"></i></a>ett.mah@gmail.com </p>
+            <a href="images/MAH, ETHAN - RESUME.pdf" download class="btn btn2"> Download CV</a>
+        </div>
+
+
+        <div class="copyright">
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/ethan-mah-348249213/"> <i class="fa-brands fa-linkedin"></i> </a>
+                <a href="https://github.com/ethaaaanm"> <i class="fa-brands fa-github"></i> </a>
+                <a href=""> <i class="fa-solid fa-seedling"></i> </a>
+            </div>
+            <p> Copyright © Ethan Mah · SproutLabs 2023</p>
+        </div>
+
+    </section>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-150px";
+        }
+    </script>
+</body>
+
+</html>
