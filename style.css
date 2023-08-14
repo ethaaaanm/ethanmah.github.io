@@ -48,7 +48,7 @@ nav ul li a::after{
     background: #149b5a;
     position: absolute;
     left: 0;
-    bottom: -6px;
+    bottom: -4px;
     transition: 0.5s;
 }
 nav ul li a:hover::after{
@@ -103,16 +103,16 @@ nav ul li a:hover::after{
     position: relative;
 }
 .tab-links.active-link::after{
-    width: 50%;
+    width: 70%;
 }
 .tab-links::after{
     content: '';
     width: 0;
-    height: 3px;
-    background: #149b5a;
+    height: 2px;
+    background: #39e190;
     position: absolute;
     left: 0;
-    bottom: -8px;
+    bottom: -3px;
     transition: 0.5s;
 }
 .tab-contents ul li{
@@ -120,7 +120,7 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #b54769;
+    color: #b7d3b3;
     font-size: 14px
 }
 .tab-contents{
@@ -149,7 +149,7 @@ nav ul li a:hover::after{
     transition: background 0.5s, transform 0.5s;
 }
 .services-list div:hover{
-    background: #ff004f; /* Fix Colour Later*/
+    background: #1c7349; 
     transform: translateY(-10px);
 }
 .services-list div i{
@@ -230,7 +230,7 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top: 20px;
-    color: #ff004f;
+    color: #695d53;
     font-size: 18px;
     line-height: 60px;
     background: #fff;
@@ -244,7 +244,7 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 1px solid #695d53;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -252,7 +252,7 @@ nav ul li a:hover::after{
     transition: background 0.5s;
 }
 .btn:hover {
-    background: #ff004f;
+    background: #695d53;
 }
 
 /***** Call to Action *****/
@@ -281,13 +281,17 @@ nav ul li a:hover::after{
     margin-top: 5px;
 }
 .contact i{
-    color: #ff004f;
+    color: #b7d3b3;
     margin-right: 10px;
     font-size: 16px;
+    transition: color 0.5s;
+}
+.contact i:hover{
+    color: #1c7349;
 }
 .btn.btn2{
     display: inline-block;
-    background: #ff004f;
+    background: #695d53;
     margin-top: 35px;
 }
 .icons{
@@ -302,7 +306,7 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 .icons a:hover{
-    color: #ff004f;
+    color: #39e190;
     transform: translateY(-5px);
 }
 .copyright{
@@ -333,7 +337,7 @@ nav .fa-solid{
     }
 
     nav ul{
-        background: #ff004f;
+        background: #1c7349;
         position: fixed;
         top: 0;
         right: -150px;
