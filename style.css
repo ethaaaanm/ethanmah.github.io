@@ -18,6 +18,9 @@ body{
     background-size: cover;
     background-position: center;
 }
+.header-container{
+    padding: 10px 5% 0 10px 
+}
 .container{
     padding: 10px 5%;
 }
@@ -28,7 +31,7 @@ nav{
     flex-wrap: wrap;
 }
 .logo{
-    width: 250px;
+    width: 300px;
 }
 nav ul li{
     display: inline-block;
@@ -128,6 +131,10 @@ nav ul li a:hover::after{
 }
 .tab-contents.active-tab{
     display: block;
+}
+.tab-contents ul li a{
+    color: inherit;
+      text-decoration: underline;
 }
 
 /***** My Projects *****/
